@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>100-Numbers</title>
+  <style>
+    #getd{
+      height: 150px;
+      width:  200px;
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><u><b>CALCULATOR:-</b></u></h1>
+  <span id="getd">
+    
+  </span>
+  <script>
+
+
+
+
+  //  console.log(result)
+// setInterval(() => {
+//   const day = newDate();
+//   const h = get.newhours();
+//   const m = get.newminutes();
+//   const s = get.newseconds();
+
+//     console.log('s');
+// }, 1000);
+    // let num1 = [5];
+    // let num2 = [1,2,4];
+    // let num =   [100];
+    // for (let i = 0; i <= 100; i++)
+    // {
+    //     console.log(i);
+    // }
+    
+
+
+    // print even number
+
+
+    // function evennumber() {
+    //   for (let i = 0; i <= 20; i += 2) {
+    //     if(i%2 == 0){
+    //     console.log(i)
+    //     }
+    //   }
+    // }
+    // evennumber();
+
+
+    // array values
+
+
+
+
+// return function
+
+// function value(){
+//       return 20;
+// }
+
+// let val = value();
+
+// function init(a,b){
+//   return val;
+// }
+// console.log("sumit");
+// console.log("veer ");
+// console.log("sukhpal  ");
+// console.log("vvekk");
+
+
+
+
+
+
+
+// let num =   ["1","2","3","4","5","6","7","8","9",4];
+//  console.log(num.length)
+//     for (let i =0; i <= num.length-1; i++) 
+//     {
+//         console.log(num[i]);
+
+//         console.log(i);
+
+//     }
+
+let get = document.getElementById('getd')
+const num=parseInt(prompt('enter a number'))
+const operation=prompt('enter a oprator:');
+const num2=parseInt(prompt('enter a number'))
+
+console.log(typeof(num))
+
+  switch(operation){
+    case '+':
+      console.log( `${(num)} + ${(num2)} = ${(num+num2)}` )
+      get.innerText = `${(num)} + ${(num2)} = ${(num+num2)}`
+      get.style.color ='white';
+
+      break;
+      case '-':
+      console.log( `${(num)} - ${(num2)} = ${(num-num2)}` )
+      break;
+     case '*':
+      console.log( `${(num)} * ${(num2)} = ${(num*num2)}` )
+      break;
+      case '/':
+      console.log( `${(num)} / ${(num2)} = ${(num/num2)}` )
+      break;
+      default:
+        console.log('else')
+        break;
+  }
+  </script>
+</body>
+
+</html>
